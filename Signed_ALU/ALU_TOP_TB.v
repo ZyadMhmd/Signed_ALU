@@ -42,7 +42,7 @@ initial begin
 
     // 00xx ? Arithmetic operations
     // Case 0000: ADD
-    A = 10; B = 5; ALU_FUN = 4'b0000;
+    A = -10; B = -5; ALU_FUN = 4'b0000;
     #10 $display("ADD: Expected=%0d, Got=%0d", A+B, Arith_Out);
 
     // Case 0001: SUB
@@ -111,4 +111,5 @@ initial begin
 end
 
 endmodule
+
 
